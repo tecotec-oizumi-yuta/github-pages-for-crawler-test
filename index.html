@@ -2,12 +2,82 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>crawler test keyword-20260407-abc123</title>
-  <meta name="description" content="crawler test meta keyword-20260407-abc123">
+  <title>クローラー基礎メモ | crawl-test-20260407-a1</title>
+  <meta name="description" content="クローラーの基本的な動作や確認観点を簡単にまとめたページです">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 16px;
+      color: #222;
+    }
+    h1, h2 {
+      line-height: 1.4;
+    }
+    .note {
+      padding: 12px 14px;
+      background: #f6f6f6;
+      border-left: 4px solid #ccc;
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>クローラーテスト</h1>
-  <p>本文キーワード: WEBクローラー用メインキーワード</p>
+  <header>
+    <h1>クローラーの基本的な動作と確認観点</h1>
+    <p>
+      このページでは、クローラーの基本的な動作や確認観点を簡単にまとめています。
+      内容は一般的な説明にとどめています。
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>クローラーとは</h2>
+      <p>
+        クローラーは、Webページを巡回してHTMLなどの情報を取得し、
+        検索や分析、データ収集などに利用する仕組みです。
+        取得対象や解析方法はシステムごとに異なります。
+      </p>
+    </section>
+
+    <section>
+      <h2>確認しやすい項目</h2>
+      <p>
+        テストでは、ページタイトル、本文、meta description など、
+        どの箇所の文字列が収集対象になるかを分けて確認すると、
+        挙動を整理しやすくなります。
+      </p>
+      <p>例</p>
+      <div class="note">
+        確認用キーワード: <strong>WEBクローラーテスト</strong>
+      </div>
+    </section>
+
+    <section>
+      <h2>静的ページを使う利点</h2>
+      <p>
+        JavaScriptで後から内容を描画するページよりも、
+        HTMLにあらかじめ本文が含まれている静的ページのほうが、
+        クローラーの初期検証には向いています。
+      </p>
+    </section>
+
+    <section>
+      <h2>補足</h2>
+      <p>
+        このページに掲載している情報は一般的な内容であり、
+        特定の製品やサービスの仕様を示すものではありません。
+      </p>
+    </section>
+  </main>
 </body>
 </html>
